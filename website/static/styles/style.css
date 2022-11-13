@@ -1,0 +1,12 @@
+.btn-submit {
+    margin-top: 20px;
+}
+
+.hide {
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.page-header {
+    margin-top: 20px;
+}
