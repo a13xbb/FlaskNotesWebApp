@@ -27,6 +27,7 @@ jobs:
           pylint-options: "--rcfile=setup.cfg"
 
   docker:
+    needs: linter
     runs-on: ubuntu-latest
     steps:
       -
@@ -49,6 +50,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/flask_notes_app
           
   my_runner:
+    needs: docker
     runs-on: self-hosted
     steps:
       - name: Pull docker image
