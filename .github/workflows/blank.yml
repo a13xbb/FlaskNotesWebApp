@@ -18,11 +18,10 @@ jobs:
   linter:
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Python Linter
+      - uses: actions/checkout@v3
+      - name: Python Linter
         uses: sunnysid3up/python-linter@v0.1-beta.7
         with:
-          source: website
           strict: low
 
   docker:
