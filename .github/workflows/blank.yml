@@ -54,4 +54,4 @@ jobs:
       - name: Pull docker image
         run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/flask_notes_app:latest
       - name: Run docker image
-        run: mintty docker run -it -p 5000:5000 ${{ secrets.DOCKERHUB_USERNAME }}/flask_notes_app:latest
+        run: docker run -it -p 5000:5000 ${{ secrets.DOCKERHUB_USERNAME }}/flask_notes_app:latest
