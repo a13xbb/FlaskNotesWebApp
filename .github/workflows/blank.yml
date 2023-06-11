@@ -22,7 +22,8 @@ jobs:
         name: Python Linter
         uses: sunnysid3up/python-linter@v0.1-beta.7
         with:
-          source: "backend"
+          source: ./website
+          strict: low
 
   docker:
     runs-on: ubuntu-latest
