@@ -24,6 +24,7 @@ jobs:
         with:
           strict: low
           mypy-options: "--ignore-missing-imports --show-error-codes"
+          pylint-options: "--rcfile=config.pylintrc"
 
   docker:
     runs-on: ubuntu-latest
