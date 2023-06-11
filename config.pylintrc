@@ -1,3 +1,7 @@
 [pylint]
 ignore=
     website/models.py,
+disable=
+    import-error,
+    missing-module-docstring,
+    missing-function-docstring
