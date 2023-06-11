@@ -15,6 +15,13 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Python Linter
+        uses: sunnysid3up/python-linter@v0.1-beta.7
+
   docker:
     runs-on: ubuntu-latest
     steps:
